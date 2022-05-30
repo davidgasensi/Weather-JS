@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="modoClaro.css"
+      rel="stylesheet" type="text/css" id="cssCambiar">
+	<title>El Tiempo</title>
+</head>
+
+<body>
+
+	<div class="container">
+    <h1>Tiempo atmosférico</h1>
+    <p>Ciudad:</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="ciudad" id="alicante">
+      <label class="form-check-label" for="alicante">
+        Alicante
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="ciudad" id="valencia">
+      <label class="form-check-label" for="valencia">
+        Valencia
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="ciudad" id="madrid">
+      <label class="form-check-label" for="madrid">
+        Madrid
+      </label>
+    </div>
+    <button class="btn btn-info m-3" onclick="obtenerTiempo()">Enviar</button>
+    
+      
+    <div class="row g-2">
+    
+    <div class="col-md-auto" id="card1">
+    
+		
+    </div>
+    
+    <div class="col-md-auto">
+    <p class="m-2 text-center"><b>Geolocalización</b></p>
+    <div class="card" style="width: 18rem;">
+      <img src="https://transparentepornaturaleza.com/wp-content/uploads/revslider/transparente-web-2020-Last/PAM_banner_textura.png" class="card-img-top img-fluid" alt="imagen" id="imagen2">
+      <div class="card-body text-center">
+        <h5 class="card-title" id="temperatura2"></h5>
+        <p class="card-text" id="nombre2"></p>
+        <p class="card-text" id="descripcion2"></p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" id="humedad2">Humedad: </li>
+        <li class="list-group-item" id="tempMax2">Temperatura Máxima: </li>
+        <li class="list-group-item" id="tempMin2">Temperatura Mínima: </li>
+      </ul>
+    </div>
+    </div>
+	  </div>
+    <button class="btn btn-light m-3" onclick="cambiarModoClaro()">Modo claro</button>
+    <button class="btn btn-dark m-3" onclick="cambiarModoOscuro()">Modo oscuro</button>
+	  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
